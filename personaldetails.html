@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+<style>
+  h1 {
+    background-color: lightgray;
+  }
+
+  .color {
+    color: black;
+  }
+
+  .nextback {
+    width: 150px;
+    height: 50px;
+  }
+
+  fieldset {
+    width: 400px;
+    text-align: center;
+  }
+</style>
+
+<body align="center">
+  <div>
+    <h1>
+      <a href="./acount.html" class="color">step 1: Account</a>
+      <a href="./personaldetails.html" class="color">Step 2: Personal Details</a>
+      <a href="./yourreview.html" class="color">step 3: your Review</a>
+    </h1>
+  </div>
+  <div align="center">
+    <form>
+      <fieldset>
+        <legend align="left" class="border">Personal Details:</legend>
+        <div>
+          <label for="FirstName"><b>First Name: </b></label>
+          <input type="text" placeholder="Enter firstname"><br /><br />
+
+          <label for="last name"> <b>last name:</b> </label>
+          <input type="text" placeholder="last name"><br /><br />
+
+          <label for="CNIC"> <b>CNIC:</b> </label>
+          <input type="number"><br /><br />
+
+          <label for="social link:"> <b>Social link:</b> </label>
+          <input type="text" placeholder="social link:">
+        </div>
+        <br /><br />
+        <div>
+          <a href="acount.html">
+            <img src="back.png" alt="back" class="nextback"></a>
+          <a href="yourreview.html">
+            <img src="next.png" alt="next" class="nextback"></a>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

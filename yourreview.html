@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+</head>
+<style>
+  h1 {
+    background-color: lightgray;
+  }
+
+  .nextback {
+    width: 150px;
+    height: 50px;
+  }
+
+  .color {
+    color: black;
+  }
+
+  fieldset {
+    width: 400px;
+    text-align: center;
+  }
+</style>
+
+<body align="center">
+  <div>
+    <h1>
+      <a href="./acount.html" class="color">step 1: Account</a>
+      <a href="./personaldetails.html" class="color">step 2:Personal Details</a>
+      <a href="./yourreview.html" class="color">Step 3: your Review</a>
+    </h1>
+  </div><br />
+  <div align="center">
+    <form action="/action_page.php" method="get">
+      <fieldset>
+        <legend align="left">Your Review:</legend>
+        <label for="browser"> <b>how did you hear about us ? </b></label>
+        <input list="browsers" name="browser" id="browser" placeholder="select your option">
+        <datalist id="browsers">
+          <option value="from relatives">
+          <option value="from friends">
+          <option value="from social media">
+        </datalist><br /><br />
+        <div>
+          <label for="select"> <b>Would You Visit Again?</b></label><br />
+          <label for="yes">Yes</label>
+          <input type="radio" id="yes" name="select">
+          <label for="No">NO</label>
+          <input type="radio" id="No" name="select">
+          <label for="Maybe">Maybe</label>
+          <input type="radio" id="Maybe" name="select">
+          <br /><br />
+          <label for="intro"><b>Comments:</b></label><br />
+          <textarea name="intro" id="" cols="30" rows="5" placeholder="Enter Your Comments" minlength="20"
+            maxlength="100"></textarea>
+        </div>
+        <div>
+
+          <label for="file"><b>Document:</b><br /></label>
+          <input type="file" id="file">
+          <br />
+          <br />
+          <input type="checkbox" id="checkbox">
+          <label for="checkbox"> <b>Sign me up for email update</b></label>
+          <br />
+          <br />
+          <a href="personaldetails.html">
+            <img src="back.png" alt="back" class="nextback"></a>
+          <a href="index.html">
+            <img src="submit.png" alt="submit" class="nextback"></a>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
